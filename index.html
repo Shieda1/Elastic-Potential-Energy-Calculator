@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elastic Potential Energy Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="elasticPotentialEnergyRadio" name="variables" checked>
+  <label for="elasticPotentialEnergyRadio">Elastic Potential Energy</label>
+
+  <input type="radio" id="elasticForceConstantRadio" name="variables">
+  <label for="elasticForceConstantRadio">Elastic Force Constant</label>
+
+  <input type="radio" id="stretchLengthRadio" name="variables">
+  <label for="stretchLengthRadio">Stretch Length</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(k) Elastic Force Constant (N/m)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(x) Stretch Length (m)</label>
+  <input type="number" id="v2"><br><br>
+
+  <button id="btn">compute</button> 
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
